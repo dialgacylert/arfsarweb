@@ -8,6 +8,42 @@
     <title>Amsar</title>
 </head>
 <body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6"><i>arfsar</i></a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button class="block absolute right-4 lg:hidden" id="nav-toggle" type="button">
+                        <span class="ham-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="ham-line transition duration-300 ease-in-out"></span>
+                        <span class="ham-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] 
+                    w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
         <div class="container">
@@ -25,9 +61,9 @@
                         <img width="400" height="400" src="dist/img/randomanime.png" alt="anime" 
                         class="max-w-full mx-auto"/>
                         <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#0891b2" d="M38.5,-38.2C48.3,-28.7,53.5,-14.3,53.5,0C53.5,14.3,48.2,28.6,38.4,43.6C28.6,58.6,14.3,74.5,0.5,73.9C-13.2,73.4,-26.4,56.5,-34.9,41.5C-43.4,26.4,-47.1,13.2,-46.1,1C-45.1,-11.2,-39.3,-22.3,-30.8,-31.8C-22.3,-41.4,-11.2,-49.3,1.6,-50.9C14.3,-52.4,28.7,-47.7,38.5,-38.2Z" 
-                                transform="translate(100 100)" scale(1.1)
+                                transform="translate(100 100)" scale(1.2)
                                 />
                               </svg>
                         </span>
@@ -70,5 +106,6 @@
 
     </section>
     <!-- About Section End -->
+    <script src="dist/js/script.js"></script>
 </body>
 </html>
